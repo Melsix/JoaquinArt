@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300&display=swap');
+    margin: 0%;
+}
+
+h1{ font-size: 4em;}
+h2{ font-size: 3em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5em;}
+ul{ list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: aqua ;
+}
+
+button:hover{
+    background-color: black; 
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:aqua;}
+
+header{
+  background-color: rgb(245,245,245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(28, 238, 238);
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: aqua;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/trice.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#acerca-de-mi .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#recomendados{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#recomendados .container{
+    padding: 150px 12px; 
+}
+
+#recomendados h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#recomendados p{
+    display: none;
+}
+
+#recomendados .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 40px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/viendo-rex.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/museo-csns.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/C3.jpeg");
+}
+
+#mis-trabajos .container{
+     text-align: center;
+     padding: 250px 12px; 
+}
+
+#mis-trabajos li{
+     margin: 16px 0px;
+     font-weight: bold;
+}
+
+#contacto{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: rgb(30,30,30);
+     color: white;
+     height: 80vh;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+     height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+     }
+
+     header .container{
+      flex-direction: row;
+      justify-content: space-between; 
+     }
+
+     header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+     }
+
+     #acerca-de-mi .container{
+        display: flex;
+        justify-content: center;
+     }
+
+     #acerca-de-mi .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     #acerca-de-mi h2{
+        margin-top: 0px;
+     }
+
+     #acerca-de-mi .img-container{
+        background-image: url("media/godzilla.jpg");
+        background-size:cover;
+        background-position: center center;
+        height: 450px;
+        width: 100%;
+        border-radius: 80px
+     }
+}
