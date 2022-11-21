@@ -6,9 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
     margin: 0%;
 }
 
@@ -81,7 +81,7 @@ header a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     flex-direction: column;
     height: 100vh;
     color:white;
@@ -164,10 +164,8 @@ header a:hover{
      text-align: center;
      padding: 250px 12px; 
 }
-
-#mis-trabajos li{
-     margin: 16px 0px;
-     font-weight: bold;
+#mis-trabajos h2{
+    font-family:'Rubik Microbe', cursive;
 }
 
 #contacto{
@@ -216,7 +214,8 @@ footer .container{
      }
 
     #hero h1{
-        font-size: 5em;
+        font-family:'Rubik Microbe', cursive;
+        font-size: 6em;
      }
 
     #acerca-de-mi .container{
@@ -266,7 +265,15 @@ footer .container{
     #recomendados h3{
        margin-top: 0;
     }
-    
+
+    .galeria{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 400px;
+        padding: 0px 50%;
+        border-radius: 20px;
+    }
 
 
 }
