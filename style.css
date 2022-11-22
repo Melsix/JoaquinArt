@@ -127,7 +127,7 @@ header a:hover{
 #recomendados .carta{
     background-position: center center;
     background-size: cover;
-    padding: 40px 0px;
+    padding: 60px 30px;
     margin: 30px;
     border-radius: 20px;
     box-shadow: rgba(0,0,0,0.5);
@@ -161,9 +161,13 @@ header a:hover{
 }
 
 #mis-trabajos .container{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
      text-align: center;
-     padding: 250px 12px; 
 }
+
 #mis-trabajos h2{
     font-family:'Rubik Microbe', cursive;
 }
@@ -264,16 +268,27 @@ footer .container{
  
     #recomendados h3{
        margin-top: 0;
+    }  
+    
+    #mis-trabajos .galeria{
+       display: flex;
+       justify-content: center;
+       width: 30%;
+       height: auto;
+       padding-bottom: 20px;
     }
 
-    .galeria{
-        display: flex;
-        justify-content: center;
-        width: 400px;
-        height: 400px;
-        padding: 0px 50%;
-        border-radius: 20px;
+    @media (max-width: 800px){
+        #mis-trabajos .galeria{
+            flex-direction: column;
+            background-size: cover;
+        }
+        #mis-trabajos img{
+            height: 100%;
+            width: 50%;
+            margin: 10px;
+            border: dotted;
+            border-width: 10px
+        }
     }
-
-
 }
