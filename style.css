@@ -183,6 +183,10 @@ header a:hover{
      height: 80vh;
 }
 
+#contacto h2{
+    font-family:'Rubik Microbe', cursive;
+}
+
 footer{
     background-color: rgb(230,230,230);
 }
@@ -278,17 +282,10 @@ footer .container{
        padding-bottom: 20px;
     }
 
-    @media (max-width: 800px){
+    @media (max-width: 600px){
         #mis-trabajos .galeria{
             flex-direction: column;
             background-size: cover;
-        }
-        #mis-trabajos img{
-            height: 100%;
-            width: 50%;
-            margin: 10px;
-            border: dotted;
-            border-width: 10px
-        }
+        }  
     }
 }
